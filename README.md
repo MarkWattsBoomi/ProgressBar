@@ -13,8 +13,7 @@ NOTE: Visibility based on page conditions is respected.
 
 # ProgressBar
 
-![alt text](https://github.com/MarkWattsBoomi/ProgressBar/blob/main/Untitled.png)
-Standard
+![alt text](https://github.com/MarkWattsBoomi/ProgressBar/blob/main/Progress.png)
 
 
 ## Functionality
