@@ -45,7 +45,7 @@ Mandatory.
 
 Number.
 
-The progress value from 0-100 %.
+The progress value from 0-100.
 
 
 
