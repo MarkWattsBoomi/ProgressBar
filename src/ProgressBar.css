@@ -1,0 +1,39 @@
+.pb
+{
+    border: 2px solid #bdbdbd;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+    border-radius: 0.2rem;
+    position: relative;
+}
+
+.pb-bar
+{
+    background-color: #009688;
+    margin-right: auto;
+    height: 100%;
+}
+
+.pb-legend {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.pb-label{
+    color: #000;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: auto;
+    width: fit-content;
+    flex-grow: 0;
+}
+
