@@ -19,12 +19,8 @@ export default class ProgressBar extends React.Component<any,any> {
     render() {
         let model = manywho.model.getComponent(this.props.id, this.props.flowKey);
         
-        let componentClass: string = "";
-        let headerClass: string = "";
-        let title: string = model.attributes?.title || 'Select File';
-
+        let componentClass: string = "";      
         componentClass = "pb " + (model.attributes?.classes || "");
-        
         
         let style: CSSProperties = {};
         style.width="-webkit-fill-available";
@@ -34,14 +30,16 @@ export default class ProgressBar extends React.Component<any,any> {
             style.display = "none";
         }
         if(model.width) {
-            style.width=model.width + "px"
+            style.width=model.width + "vw"
         }
         if(model.height) {
-            style.height=model.height + "px"
+            style.height=model.height + "vh"
         }
 
-        let width: string = "" + model.attributes?.progress + "%";
-        let label: string = "" + model.attributes?.progress + " %";
+        let progress: number = parseInt(model.contentValue || "0");
+
+        let width: string = "" + progress + "%";
+        let label: string = "" + progress + " %";
         let barStyle: CSSProperties = {};
         barStyle.width = width;
   

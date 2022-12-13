@@ -10,7 +10,6 @@ module.exports = function() {
             path: path.resolve(__dirname, 'build'),
             sourceMapFilename: '[flow.filenames.js].map',
         },
-        devtool: 'inline-source-map',
         resolve: {
             extensions: ['.ts', '.tsx', '.js', '.json'],
         },
